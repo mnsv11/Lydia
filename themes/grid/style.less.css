@@ -232,8 +232,9 @@ body{margin:0;padding:0;color:@color;background-color:@bgcolor2;
 #inner-wrap-main{.wrap();margin-bottom:@magic-number;}
 #main{}
 
-#primary{.column(8);}
-#sidebar{.column(4);}
+#leftbar{.column(3);}
+#primary{.column(6);}
+#rightbar{.column(3);}
 
 
 /** --------------------------------------------------------------

@@ -1,5 +1,7 @@
-<h1>Pages</h1>
-
+<h1>Nyheter</h1>
+<?php if($usercheck['acronym']):?>
+<p><a href='<?=create_url("content/create")?>'>Lägg till nyhet</a>.</p>
+<?php endif;?>
 
 <?php if($contents != null):?>
   <?php foreach($contents as $val):?>
@@ -12,4 +14,3 @@
 <?php else:?>
   <p>No pages exists.</p>
 <?php endif;?>
-<p>Pages, <a href='<?=create_url("content")?>'>view all content</a>.</p>

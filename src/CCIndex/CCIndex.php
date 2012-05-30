@@ -20,7 +20,7 @@ class CCIndex extends CObject implements IController {
     $controllers = $modules->AvailableControllers();
     $this->views->SetTitle('Index');
     $this->views->AddInclude(__DIR__ . '/index.tpl.php', array(), 'primary');
-    $this->views->AddInclude(__DIR__ . '/sidebar.tpl.php', array('controllers'=>$controllers), 'sidebar');
+    $this->views->AddInclude(__DIR__ . '/sidebar.tpl.php', array('controllers'=>$controllers), 'rightbar');
   }
 
 

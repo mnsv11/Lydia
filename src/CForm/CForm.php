@@ -146,6 +146,23 @@ class CFormElementText extends CFormElement {
   }
 }
 
+class CFormElementUpload extends CFormElement{
+
+  /**
+   * Constructor
+   *
+   * @param string name of the element.
+   * @param array attributes to set to the element. Default is an empty array.
+   */
+  public function __construct($name, $attributes=array()) {
+    parent::__construct($name, $attributes);
+    $this['type'] = 'file';
+    $this->UseNameAsDefaultLabel();
+  }
+
+	
+}
+
 class CFormElementTextarea extends CFormElement {
   /**
    * Constructor
@@ -266,7 +283,7 @@ class CForm implements ArrayAccess {
     $class   = isset($this->form['class'])   ? " class='{$this->form['class']}'" : null;
     $name   = isset($this->form['name'])    ? " name='{$this->form['name']}'" : null;
     $action = isset($this->form['action'])  ? " action='{$this->form['action']}'" : null;
-    $method = " method='post'";
+    $method = " enctype='multipart/form-data' method='post'";
 
     if(isset($attributes['start']) && $attributes['start']) {
       return "<form{$id}{$class}{$name}{$action}{$method}>";

@@ -11,9 +11,12 @@
 <p>First you have to make the data-directory writable. This is the place where Lydia needs
 to be able to write and create files.</p>
 <blockquote>
-<code>cd lydia; chmod 777 site/data</code><br>
-<code>cd lydia; chmod 777 themes/grid</code>
 <P>Change in .htaccess </p>
+<code>cd lydia; chmod 777 site/data/.ht.sqlite</code><br>
+<code>cd lydia; chmod 777 site/data</code>(Maby on this one to)<br>
+<code>cd lydia; chmod 777 site/pictures</code><br>
+<code>cd lydia; chmod 777 themes/grid</code>
+
 
 </blockquote>
 

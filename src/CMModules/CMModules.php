@@ -90,7 +90,7 @@ class CMModules extends CObject {
           $modules[$module]['hasSQL']        = $rc->implementsInterface('IHasSQL');
           $modules[$module]['isManageable']  = $rc->implementsInterface('IModule');
           $modules[$module]['isLydiaCore']   = in_array($rc->name, array('CLydia', 'CDatabase', 'CRequest', 'CViewContainer', 'CSession', 'CObject'));
-          $modules[$module]['isLydiaCMF']    = in_array($rc->name, array('CForm', 'CCPage', 'CCBlog', 'CMUser', 'CCUser', 'CMContent', 'CCContent', 'CFormUserLogin', 'CFormUserProfile', 'CFormUserCreate', 'CFormContent', 'CHTMLPurifier'));
+          $modules[$module]['isLydiaCMF']    = in_array($rc->name, array('CForm', 'CCPage', 'CCBlog', 'CMUser', 'CCUser', 'CMContent', 'CCContent','CMPics','CCPics', 'CFormUserLogin', 'CFormUserProfile', 'CFormUserCreate', 'CFormContent', 'CHTMLPurifier'));
         }
       }
     }

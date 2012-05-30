@@ -45,6 +45,7 @@ $ly->config['controllers'] = array(
   'theme'     => array('enabled' => true,'class' => 'CCTheme'),
   'modules'   => array('enabled' => true,'class' => 'CCModules'),
   'my'        => array('enabled' => true,'class' => 'CCMycontroller'),
+  'pics'      => array('enabled' => true,'class' => 'CCPics'),
 
 );
 
@@ -119,7 +120,7 @@ $ly->config['theme'] = array(
   //'stylesheet'      => 'style.php',
   'template_file'   => 'index.tpl.php',
   'regions' => array('flash','featured-first','featured-middle','featured-last',
-    'primary','sidebar','triptych-first','triptych-middle','triptych-last',
+    'primary','rightbar','leftbar','triptych-first','triptych-middle','triptych-last',
     'footer-column-one','footer-column-two','footer-column-three','footer-column-four',
     'footer',
   ),
@@ -140,7 +141,8 @@ $ly->config['theme'] = array(
     	    'blog'       => array('text'=>'Blogg',      'url'=>'blog'),
     	    'theme'      => array('text'=>'Themes',     'url'=>'theme'),
     	    'modules'    => array('text'=>'Moduls',     'url'=>'modules'),
-    	    'gb     '    => array('text'=>'GB',         'url'=>'my/guestbook'),
+    	    'gb'         => array('text'=>'GB',         'url'=>'my/guestbook'),
+    	    'Bilder'     => array('text'=>'Bilder',     'url'=>'pics'),
     	    ),
   ),
 );
